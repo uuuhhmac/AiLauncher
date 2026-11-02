@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+/* Custom Icon Shape Clip Paths */
+.shape-circle {
+  border-radius: 9999px;
+}
+
+.shape-squircle {
+  border-radius: 28%;
+}
+
+.shape-rounded-square {
+  border-radius: 18px;
+}
+
+.shape-teardrop {
+  border-radius: 50% 50% 50% 12%;
+}
+
+.shape-pebble {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+}
+
+.shape-scallop {
+  clip-path: polygon(
+    50% 0%, 65% 5%, 78% 14%, 86% 26%, 95% 38%, 98% 50%,
+    95% 62%, 86% 74%, 78% 86%, 65% 95%, 50% 100%,
+    35% 95%, 22% 86%, 14% 74%, 5% 62%, 2% 50%,
+    5% 38%, 14% 26%, 22% 14%, 35% 5%
+  );
+  border-radius: 24%;
+}
+
+.shape-hexagon {
+  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+}
+
+.shape-cylinder {
+  border-radius: 36%;
+}
+
+/* Scrollbar styling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

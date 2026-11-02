@@ -1,0 +1,6 @@
+{
+  "name": "AetherOS - Customizable Android Skin & Launcher",
+  "description": "Stock Android launcher skin with dynamic icon shapes, Material You theme engine, custom icon packs, and an extensive collection of interactive clock widgets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
